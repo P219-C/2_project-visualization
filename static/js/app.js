@@ -8,7 +8,7 @@ function onlyUnique(value, index, self) {
 }
 
 d3.json(queryUrl).then(function(data) {
-    // console.log(data);   // Uncomment to print the full dataset in console
+    console.log(data);   // Uncomment to print the full dataset in console
 
 
     // ************ Code to test the dataset. It prints the location name of the earthquake"
