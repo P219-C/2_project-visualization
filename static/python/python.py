@@ -34,7 +34,7 @@ from sqlalchemy.ext.declarative import declarative_base
 Base = declarative_base()
 
 # Import modules to declare columns and column data types
-from sqlalchemy import Table, Column, Integer, String, Float, BigInteger
+from sqlalchemy import Table, Column, Integer, String, Float, BigInteger, ForeignKey
 
 
 
@@ -43,23 +43,23 @@ from sqlalchemy import Table, Column, Integer, String, Float, BigInteger
 
 class Countries(Base):  #Parent
     __tablename__ = 'countries'
-    id = Column(Integer, primary_key=True)
-    CountryCode = Column(String(255))
+    # id = Column(Integer, primary_key=True)
+    CountryCode = Column(String(255), primary_key=True)
     CountryName = Column(String(255))
     Population = Column(Float)  # Millions
     HDIndex = Column(Float) # Index
-    # children = relationship("Earthquakes", back_populates="parent")
+    earthquake = relationship("Earthquakes")
 
 class Earthquakes(Base):    #Child
     __tablename__ = 'earthquakes'
-    id = Column(Integer, primary_key=True)
-    EarthquakeID = Column(String(255))
+    # id = Column(Integer, primary_key=True)
+    EarthquakeID = Column(String(255), primary_key=True)
     Latitude = Column(Float)
     Longitude = Column(Float)
     Depth = Column(Float)
     DateTime = Column(BigInteger)
     CountryCode = Column(String(255))   # Foreign Key?
-    # parent_id = Column(Integer, ForeignKey('countries.CountryCode'))
+    country_id = Column(Integer, ForeignKey('countries.CountryCode'))
     # parent = relationship("Countries", back_populates="children")
 
 
@@ -93,6 +93,7 @@ for earthquake in data_USGS["features"]:
     session.commit()
     print(i)
     i = i+1
+
 
 
 
