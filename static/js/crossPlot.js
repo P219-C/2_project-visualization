@@ -1,14 +1,13 @@
-// Scatterplot/Bubble chart to show location(close to equator) Vs...
-    // Top 25 Highest Magnitudes
-    // Top 25 earthquakes with largest Depth of earthquake
-    // Signicance: Value is determing by a number of factors eg mag, max MMI, reports and estimated impact
+// Scatterplot/Bubble chart to show location vs Top 25 Highest Magnitudes
+// Top 25 earthquakes with largest Depth of earthquake vs mag
+// Signicance: Value is determing by a number of factors eg mag, max MMI, reports and estimated impact
 
 
 var url = "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_month.geojson"
 
 // Fetching the data for the scatterplot
 d3.json(url).then(data => {
-    console.log(data)
+    // console.log(data)
 
     // Initial scatter plot
     // Sorted by top 25 Magitudes
@@ -19,13 +18,21 @@ d3.json(url).then(data => {
     var top_25Mag = sortedMag.slice(0,25);
 
     // Location Vs Magnitude ScatterPlot
+    function getRadius(magnitude) {
+        if (magnitude === 0) {
+          return 1;
+        }
+        return magnitude * 4;
+      }
+    
+    // var labels = 
     var bubble_trace = {
         x:top_25Mag.map(row => row.geometry.coordinates[1]),
         y:top_25Mag.map(row => row.geometry.coordinates[0]),
         mode: "markers",
+        // text: `Place: ${top_25Mag.map(row => row.properties.place)}`,
         marker: {
-            size: top_25Mag.map(row => row.properties.mag),
-            colorscale: 'YlGnBu'
+            size: top_25Mag.map(row => getRadius(row.properties.mag))
         }
     };
 
@@ -56,20 +63,26 @@ d3.json(url).then(data => {
             var top_25Mag = sortedMag.slice(0,25);
 
             // Location Vs Magnitude ScatterPlot
+            function getRadius(magnitude) {
+                if (magnitude === 0) {
+                  return 1;
+                }
+                return magnitude * 4;
+              }
+            
             var bubble_trace = {
                 x:top_25Mag.map(row => row.geometry.coordinates[1]),
                 y:top_25Mag.map(row => row.geometry.coordinates[0]),
                 mode: "markers",
                 marker: {
-                    size: top_25Mag.map(row => row.properties.mag),
-                    colorscale: 'YlGnBu'
+                    size: top_25Mag.map(row => getRadius(row.properties.mag))     
                 }
             };
 
             var bubble_data = [bubble_trace];
 
             var bubble_layout = {
-                title: "Location Vs Magnitude",
+                title: "Magnitude Vs Location",
                 yaxis: {title: "Longitude"},
                 xaxis: {title: "Latitude"},
                 height: 500,
@@ -83,24 +96,22 @@ d3.json(url).then(data => {
         });
         
             var top_25Dept = sortedDept.slice(0,25);
+            console.log(top_25Dept)
 
-            // Location Vs Earthquake Depth
+            // Bubble chart for Magnitude Vs Depth
             var bubble_trace = {
-                x:top_25Dept.map(row => row.geometry.coordinates[1]),
-                y:top_25Dept.map(row => row.geometry.coordinates[0]),
-                mode: "markers",
-                marker: {
-                    size: top_25Dept.map(row => row.geometry.coordinates[2]),
-                    colorscale: 'YlGnBu'
-                }
+                x:top_25Dept.map(row => row.geometry.coordinates[2]),
+                y:top_25Dept.map(row => row.properties.mag),
+                type: 'scatter',
+                mode:'markers'
             };
 
             var bubble_data = [bubble_trace];
 
             var bubble_layout = {
-                title: "Location Vs Depth",
-                yaxis: {title: "Longitude"},
-                xaxis: {title: "Latitude"},
+                title: "Magnitude Vs Depth",
+                xaxis: {title: "Depth of Earthquake"},
+                yaxis: {title: "Magnitude of Earthquake"},
                 height: 500,
                 width: 700
                 };
@@ -113,23 +124,20 @@ d3.json(url).then(data => {
             
             var top_25Sig = sortedSig.slice(0,25);
     
-            // Location Vs Earthquake Significance
+            // Magnitude Vs Earthquake Significance
             var bubble_trace = {
-                x:top_25Sig.map(row => row.geometry.coordinates[1]),
-                y:top_25Sig.map(row => row.geometry.coordinates[0]),
+                x:top_25Sig.map(row => row.properties.mag),
+                y:top_25Sig.map(row => row.properties.sig),
                 mode: "markers",
-                marker: {
-                    size: top_25Sig.map(row => row.properties.sig),
-                    colorscale: 'YlGnBu'
-                }
+                type: 'scatter'
             };
         
             var bubble_data = [bubble_trace];
         
             var bubble_layout = {
-                title: "Location Vs Significance",  
-                yaxis: {title: "Longitude"},
-                xaxis: {title: "Latitude"},
+                title: "Magnitude Vs Significance",  
+                xaxis: {title: "Significance of Earthquake"},
+                yaxis: {title: "Magnitude of Earthquake"},
                 height: 500,
                 width: 700
                 };
