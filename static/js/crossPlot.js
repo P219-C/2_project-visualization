@@ -1,16 +1,14 @@
-// Scatterplot/Bubble chart to show location vs Top 25 Highest Magnitudes
-// Top 25 earthquakes with largest Depth of earthquake vs mag
-// Signicance: Value is determing by a number of factors eg mag, max MMI, reports and estimated impact
+// Bubble chart to show Top 25 Highest Magnitudes vs location
+// Top 25 earthquakes with largest Depth of earthquake vs magnitude
+// Signicance (Value is determing by a number of factors eg mag, max MMI, reports and estimated impact) vs mag
 
 
 var url = "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_month.geojson"
 
 // Fetching the data for the scatterplot
 d3.json(url).then(data => {
-    // console.log(data)
 
-    // Initial scatter plot
-    // Sorted by top 25 Magitudes
+    // Initial scatter plot: Magnitude Vs Location
     var sortedMag= data.features.sort((a,b) => {
         return b.properties.mag - a.properties.mag;
     });
@@ -25,7 +23,6 @@ d3.json(url).then(data => {
         return magnitude * 4;
       }
     
-    // var labels = 
     var bubble_trace = {
         x:top_25Mag.map(row => row.geometry.coordinates[1]),
         y:top_25Mag.map(row => row.geometry.coordinates[0]),
@@ -39,7 +36,7 @@ d3.json(url).then(data => {
     var bubble_data = [bubble_trace];
 
     var bubble_layout = {
-        title: "Location Vs Magnitude",
+        title: "Magnitude Vs Location",
         yaxis: {title: "Longitude"},
         xaxis: {title: "Latitude"},
         height: 500,
@@ -54,7 +51,7 @@ d3.json(url).then(data => {
         var element = d3.select("#selectOption");
         var value = d3.select("#selectOption").property("value");
     
-        if (value == 'mag'){
+        if (value == 'location'){
             // Sorted by top 25 Magitudes
             var sortedMag= data.features.sort((a,b) => {
             return b.properties.mag - a.properties.mag;
@@ -96,7 +93,6 @@ d3.json(url).then(data => {
         });
         
             var top_25Dept = sortedDept.slice(0,25);
-            console.log(top_25Dept)
 
             // Bubble chart for Magnitude Vs Depth
             var bubble_trace = {
