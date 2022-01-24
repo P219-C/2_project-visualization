@@ -11,6 +11,7 @@
   crossorigin="" />>
   <!--D3 cdn-->
   <script src="https://d3js.org/d3.v5.min.js"></script>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
 
 </head>
 <body>
@@ -71,6 +72,13 @@
     <h2>Plot 5</h2>
   </div>
 
+  <div id="scatter"></div>
+  <select id="selectOption">
+    <option value='location'>Location</option>
+    <option value='depth'>Depth</option>
+    <option value='sig'>Significance</option>
+  </select>
+
   <!-- API key -->
   <script type="text/javascript" src="../static/js/config.js"></script>
   <!-- Leaflet heatmap plugin-->
@@ -81,6 +89,11 @@
     <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
 
 <!-- Our JS -->
+<!-- <script type="text/javascript" src="../static/js/heatmap2.js"></script> -->
+
+<script src="../static/js/crossPlot.js"></script>
+
+
 <script type="text/javascript" src="../static/js/heatmap.js"></script>
 <script type="text/javascript" src="../static/js/violin.js"></script>
 
