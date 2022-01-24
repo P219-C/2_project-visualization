@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Project 2</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href = "../static/css/style.css">
+</head>
+<body>
+  <div class="topnav">
+        <a class="active" href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="data.html">Data</a>
+        <a href="visualisations.html">Visualisations</a>
+    </div>
+    <div class="top-container">
+      <h1>About the project</h1>
+    </div>
+    <div class="header" id="myHeader">
+      <h2>Project Description</h2>
+    </div>
+    <div class="content">
+      <h3>Purpose and Motivation</h3>
+      <p>The purpose of this project is to gather earthquake GeoJSON data from the API, create and explore interactive maps of earthquakes around the world that tracks not only the earthquakes but the magnitude as well. The map also includes pop-up information for each incident.
+        This project aims to build an interactive front end website using HTML CSS and javaScript.
+        </p>
+    </div>
+    <div class="content">
+      <h3>Solution</h3>
+      <p>The earthquake data was imported, and each earthquakes position, significance and magnitude 
+        were pulled out of the dataset. At each earthquakes position, a circle element was appended to the leaflet map. 
+        Each data marker reflects the magnitude of the earthquake in its size and the significance of earthquake in its colour. Earthquakes with higher magnitudes appear larger and those with higher significance appear darker in colour. When any marker is clicked a pop-up appears providing additional information about the quake.
+
+        </p>
+    </div>
+    <div class="content">
+      <h3>Skills used</h3>
+    <script>
+      window.onscroll = function() {myFunction()};
+      
+      var navbar = document.getElementById("navbar");
+      var sticky = navbar.offsetTop;
+      
+      function myFunction() {
+        if (window.pageYOffset >= sticky) {
+          navbar.classList.add("sticky")
+        } else {
+          navbar.classList.remove("sticky");
+        }
+      }
+      </script>
+
+    
+
+      <p>HTML</p>
+      <div class="container-skills">
+        <div class="skills html">20%</div>
+      </div>
+      <br>
+      <p>CSS</p>
+      <div class="container-skills">
+        <div class="skills css">15%</div>
+      </div>
+      <br>
+      <p>JavaScript</p>
+      <div class="container-skills">
+        <div class="skills js">35%</div>
+      </div>
+      <br>
+      <p>Python</p>
+      <div class="container-skills">
+        <div class="skills python">30%</div>
+      </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  
+</body>
+</html>
