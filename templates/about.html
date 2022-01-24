@@ -9,26 +9,33 @@
 </head>
 <body>
   <div class="topnav">
-        <a class="active" href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="data.html">Data</a>
-        <a href="visualisations.html">Visualisations</a>
+        <a class="active" href="/">Home</a>
+        <a href="/about">About</a>
+        <a href="/API">Data</a>
+        <a href="/visualisations">Visualisations</a>
     </div>
     <div class="top-container">
       <h1>About the project</h1>
-      <p>Scroll down to see the sticky effect.</p>
     </div>
     <div class="header" id="myHeader">
-      <h2>My Header</h2>
+      <h2>Project Description</h2>
     </div>
     <div class="content">
-      <h3>Project Description</h3>
-      <p>The navbar will stick to the top when you reach its scroll position.</p>
-      <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-      <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-      
+      <h3>Purpose and Motivation</h3>
+      <p>The purpose of this project is to gather earthquake GeoJSON data from the API, create and explore interactive maps of earthquakes around the world that tracks not only the earthquakes but the magnitude as well. The map also includes pop-up information for each incident.
+        This project aims to build an interactive front end website using HTML CSS and javaScript.
+        </p>
     </div>
-    
+    <div class="content">
+      <h3>Solution</h3>
+      <p>The earthquake data was imported, and each earthquakes position, significance and magnitude 
+        were pulled out of the dataset. At each earthquakes position, a circle element was appended to the leaflet map. 
+        Each data marker reflects the magnitude of the earthquake in its size and the significance of earthquake in its colour. Earthquakes with higher magnitudes appear larger and those with higher significance appear darker in colour. When any marker is clicked a pop-up appears providing additional information about the quake.
+
+        </p>
+    </div>
+    <div class="content">
+      <h3>Skills used</h3>
     <script>
       window.onscroll = function() {myFunction()};
       
@@ -44,25 +51,25 @@
       }
       </script>
 
-    <h3>Skills used</h3>
+    
 
       <p>HTML</p>
-      <div class="container">
+      <div class="container-skills">
         <div class="skills html">20%</div>
       </div>
-      
+      <br>
       <p>CSS</p>
-      <div class="container">
+      <div class="container-skills">
         <div class="skills css">15%</div>
       </div>
-      
+      <br>
       <p>JavaScript</p>
-      <div class="container">
+      <div class="container-skills">
         <div class="skills js">35%</div>
       </div>
-      
+      <br>
       <p>Python</p>
-      <div class="container">
+      <div class="container-skills">
         <div class="skills python">30%</div>
       </div>
 

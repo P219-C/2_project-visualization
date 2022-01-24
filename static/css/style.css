@@ -127,9 +127,9 @@ body, html {
 * {box-sizing:border-box}
 
 /* Container for skill bars */
-.container {
-  width: 50%; /* Full width */
-  background-color: #ddd; /* Grey background */
+.container-skills {
+  width: 20%; /* Full width */
+  background-color: rgb(82, 72, 72); /* Grey background */
 }
 
 .skills {
@@ -139,10 +139,10 @@ body, html {
   color: white; /* White text color */
 }
 
-.html {width: 90%; background-color: #04AA6D;} /* Green */
-.css {width: 80%; background-color: #2196F3;} /* Blue */
-.js {width: 65%; background-color: #f44336;} /* Red */
-.python {width: 30%; background-color: #9d4ca0;} /* Dark Grey */
+.html {width: 20%; background-color: #04AA6D;} /* Green */
+.css {width: 10%; background-color: #2196F3;} /* Blue */
+.js {width: 35%; background-color: #f44336;} /* Red */
+.python {width: 35%; background-color: #9d4ca0;} /* Dark Grey */
   
   
 .top-container {
@@ -185,4 +185,23 @@ body {
 body,
 html {
   height: 100%;
+}
+.map {
+  width:640px;
+  height:480px;
+}
+
+.container-plots {
+  display: flex;
+  align-items: left;
+  justify-content: Left
+}
+.text-plots {
+  font-size: 15px;
+  padding-left: 10px;
+  
+}
+
+.image-plot {
+  flex-basis: 40%
 }
