@@ -42,13 +42,24 @@
 
   <div class="header" id="myHeader">
     <h2>Scatter plot</h2>
-    <div class='scatter'></div>
   </div>
-  <select id="selectOption">
-    <option value='location'>Location</option>
-    <option value='depth'>Depth</option>
-    <option value='sig'>Significance</option>
-  </select>
+  <div class="container">
+  <div class=col-md-12>
+    <div id="scatter">
+    <select id="selectOption">
+      <option value='location'>Location</option>
+      <option value='depth'>Depth</option>
+      <option value='sig'>Significance</option>
+    </select>
+    <hr>
+    <div class="result">
+    <p >The plots utilises Plotly to visualise the earthquakes with the highest 25 magnitudes from the geojson data based on their corresponding independent variable.
+       This visualisation makes it easier to see if there are any correlations between Magnitude of an earthquake and other factors based on the sample used.
+    </p>
+  </div>
+  </div>
+</div>
+</div>
  
   <br>
 
