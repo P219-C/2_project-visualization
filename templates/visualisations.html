@@ -24,27 +24,30 @@
 
   <div class="top-container">
     <h1>Visualisations</h1>
-    
   </div>
+
   <div class="header" id="myHeader">
     <h2>Bar Plot</h2></div>
     <div class="container-plots">
       <div class="text-plots">
         <p>Bar plot text</p>
       </div>
-  <div class="Bar"></div>
-</div>
+      <div class="Bar"></div>
+    </div>
+  </div>
   <br>
   
+
+
   <div class="header" id="myHeader">
     <h2>Scatter plot</h2>
   </div>
   <br>
 
-  <div class='violin'></div>
-  
+
   <div class="header" id="myHeader">
-    <h2>Heat Map</h2> </div>
+    <h2>Heat Map</h2>
+  </div>
     
     
     <div class="container-plots">
@@ -59,8 +62,9 @@
 </div>
 
 
-  <div class="header" id="myHeader">
-    <h2>Plot 4</h2>
+  <div class="header" id="myViolin">
+    <h2>Violin</h2>
+    <div id="violin"></div>
   </div>
 
   <div class="header" id="myHeader">
@@ -73,6 +77,8 @@
   <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
     integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
     crossorigin=""></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
 
 <!-- Our JS -->
 <script type="text/javascript" src="../static/js/heatmap.js"></script>
