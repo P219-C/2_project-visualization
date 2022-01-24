@@ -16,34 +16,18 @@ app = Flask(__name__)
 def index():
     return render_template("index.html")
 
+
+@app.route('/visualisations')
+def visualisations():
+    return render_template("visualisations.html")
+
+@app.route('/about')
+def about():
+    return render_template("about.html")
+
 @app.route("/API")
 def api():
-
-    available_API = """
-    <a href="/API/countries"><strong>/API/countries</strong></a>
-    <p>Description: Json file with information of the countries:</p>
-    <p><ul>
-        <li>Country Code (to link to the earthquake table)</li>
-        <li>Country Name</li>
-        <li>Total Population (millions)</li>
-        <li>HDI</li>
-    </ul></p>
-    <a href="/API/earthquakes"><strong>/API/earthquakes</strong></a>
-    <p>Description: Json file with information of the earthquakes:</p>
-    <p><ul>
-        <li>USGS Earthquake ID</li>
-        <li>Longitude</li>
-        <li>Latitude</li>
-        <li>Depth</li>
-        <li>Timestamp</li>
-        <li>Magnitude</li>
-        <li>Country Code (to link to the country json file)</li>
-    </p></ul>
-    <a href="/API/countries_earthquakes"><strong>/API/countries_earthquakes</strong></a>
-    <p>Description: An INNER JOIN of the countries and earthquakes table through the country code (earthquakes.country_id=countries.CountryCode)</p>
-    """
-
-    return available_API
+    return render_template("data.html")
 
 
 @app.route("/API/countries")
