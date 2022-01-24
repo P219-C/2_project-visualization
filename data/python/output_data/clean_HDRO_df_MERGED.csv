@@ -1,0 +1,190 @@
+,CountryName,HDI,TotalPopulation,name,alpha-2,alpha-3
+0,Afghanistan,0.511,38.042,Afghanistan,AF,AFG
+1,Angola,0.581,31.825,Angola,AO,AGO
+2,Albania,0.795,2.8810000000000002,Albania,AL,ALB
+3,Andorra,0.868,0.077,Andorra,AD,AND
+4,United Arab Emirates,0.89,9.771,United Arab Emirates,AE,ARE
+5,Argentina,0.845,44.781,Argentina,AR,ARG
+6,Armenia,0.776,2.958,Armenia,AM,ARM
+7,Antigua and Barbuda,0.778,0.097,Antigua and Barbuda,AG,ATG
+8,Australia,0.9440000000000001,25.203,Australia,AU,AUS
+9,Austria,0.922,8.955,Austria,AT,AUT
+10,Azerbaijan,0.756,10.048,Azerbaijan,AZ,AZE
+11,Burundi,0.433,11.531,Burundi,BI,BDI
+12,Belgium,0.931,11.539,Belgium,BE,BEL
+13,Benin,0.545,11.801,Benin,BJ,BEN
+14,Burkina Faso,0.452,20.321,Burkina Faso,BF,BFA
+15,Bangladesh,0.632,163.046,Bangladesh,BD,BGD
+16,Bulgaria,0.8160000000000001,7.0,Bulgaria,BG,BGR
+17,Bahrain,0.852,1.641,Bahrain,BH,BHR
+18,Bahamas,0.8140000000000001,0.389,Bahamas,BS,BHS
+19,Bosnia and Herzegovina,0.78,3.301,Bosnia and Herzegovina,BA,BIH
+20,Belarus,0.8230000000000001,9.452,Belarus,BY,BLR
+21,Belize,0.716,0.39,Belize,BZ,BLZ
+22,Bolivia (Plurinational State of),0.718,11.513,Bolivia (Plurinational State of),BO,BOL
+23,Brazil,0.765,211.05,Brazil,BR,BRA
+24,Barbados,0.8140000000000001,0.28700000000000003,Barbados,BB,BRB
+25,Brunei Darussalam,0.838,0.433,Brunei Darussalam,BN,BRN
+26,Bhutan,0.654,0.763,Bhutan,BT,BTN
+27,Botswana,0.735,2.304,Botswana,BW,BWA
+28,Central African Republic,0.397,4.745,Central African Republic,CF,CAF
+29,Canada,0.929,37.411,Canada,CA,CAN
+30,Switzerland,0.9550000000000001,8.591,Switzerland,CH,CHE
+31,Chile,0.851,18.952,Chile,CL,CHL
+32,China,0.761,1433.784,China,CN,CHN
+33,Cote d'Ivoire,0.538,25.717,Côte d'Ivoire,CI,CIV
+34,Cameroon,0.5630000000000001,25.876,Cameroon,CM,CMR
+35,Congo (Democratic Republic of the),0.48,86.791,"Congo, Democratic Republic of the",CD,COD
+36,Congo,0.5740000000000001,5.381,Congo,CG,COG
+37,Colombia,0.767,50.339,Colombia,CO,COL
+38,Comoros,0.554,0.851,Comoros,KM,COM
+39,Cabo Verde,0.665,0.55,Cabo Verde,CV,CPV
+40,Costa Rica,0.81,5.048,Costa Rica,CR,CRI
+41,Cuba,0.783,11.333,Cuba,CU,CUB
+42,Cyprus,0.887,1.199,Cyprus,CY,CYP
+43,Czechia,0.9,10.689,Czechia,CZ,CZE
+44,Germany,0.9470000000000001,83.517,Germany,DE,DEU
+45,Djibouti,0.524,0.974,Djibouti,DJ,DJI
+46,Dominica,0.742,0.07200000000000001,Dominica,DM,DMA
+47,Denmark,0.9400000000000001,5.772,Denmark,DK,DNK
+48,Dominican Republic,0.756,10.739,Dominican Republic,DO,DOM
+49,Algeria,0.748,43.053,Algeria,DZ,DZA
+50,Ecuador,0.759,17.374,Ecuador,EC,ECU
+51,Egypt,0.707,100.388,Egypt,EG,EGY
+52,Eritrea,0.459,3.497,Eritrea,ER,ERI
+53,Spain,0.904,46.737,Spain,ES,ESP
+54,Estonia,0.892,1.326,Estonia,EE,EST
+55,Ethiopia,0.485,112.079,Ethiopia,ET,ETH
+56,Finland,0.9380000000000001,5.532,Finland,FI,FIN
+57,Fiji,0.743,0.89,Fiji,FJ,FJI
+58,France,0.901,65.13,France,FR,FRA
+59,Micronesia (Federated States of),0.62,0.114,Micronesia (Federated States of),FM,FSM
+60,Gabon,0.7030000000000001,2.173,Gabon,GA,GAB
+61,United Kingdom,0.932,67.53,United Kingdom of Great Britain and Northern Ireland,GB,GBR
+62,Georgia,0.812,3.997,Georgia,GE,GEO
+63,Ghana,0.611,30.418,Ghana,GH,GHA
+64,Guinea,0.47700000000000004,12.771,Guinea,GN,GIN
+65,Gambia,0.496,2.348,Gambia,GM,GMB
+66,Guinea-Bissau,0.48,1.921,Guinea-Bissau,GW,GNB
+67,Equatorial Guinea,0.592,1.3559999999999999,Equatorial Guinea,GQ,GNQ
+68,Greece,0.888,10.473,Greece,GR,GRC
+69,Grenada,0.779,0.112,Grenada,GD,GRD
+70,Guatemala,0.663,17.581,Guatemala,GT,GTM
+71,Guyana,0.682,0.783,Guyana,GY,GUY
+72,"Hong Kong, China (SAR)",0.9490000000000001,7.436,Hong Kong,HK,HKG
+73,Honduras,0.634,9.746,Honduras,HN,HND
+74,Croatia,0.851,4.13,Croatia,HR,HRV
+75,Haiti,0.51,11.263,Haiti,HT,HTI
+76,Hungary,0.854,9.685,Hungary,HU,HUN
+77,Indonesia,0.718,270.626,Indonesia,ID,IDN
+78,India,0.645,1366.418,India,IN,IND
+79,Ireland,0.9550000000000001,4.882,Ireland,IE,IRL
+80,Iran (Islamic Republic of),0.783,82.914,Iran (Islamic Republic of),IR,IRN
+81,Iraq,0.674,39.31,Iraq,IQ,IRQ
+82,Iceland,0.9490000000000001,0.339,Iceland,IS,ISL
+83,Israel,0.919,8.519,Israel,IL,ISR
+84,Italy,0.892,60.55,Italy,IT,ITA
+85,Jamaica,0.734,2.948,Jamaica,JM,JAM
+86,Jordan,0.729,10.102,Jordan,JO,JOR
+87,Japan,0.919,126.86,Japan,JP,JPN
+88,Kazakhstan,0.8250000000000001,18.551,Kazakhstan,KZ,KAZ
+89,Kenya,0.601,52.574,Kenya,KE,KEN
+90,Kyrgyzstan,0.6970000000000001,6.416,Kyrgyzstan,KG,KGZ
+91,Cambodia,0.594,16.487,Cambodia,KH,KHM
+92,Kiribati,0.63,0.11800000000000001,Kiribati,KI,KIR
+93,Saint Kitts and Nevis,0.779,0.053,Saint Kitts and Nevis,KN,KNA
+94,Korea (Republic of),0.916,51.225,"Korea, Republic of",KR,KOR
+95,Kuwait,0.806,4.207,Kuwait,KW,KWT
+96,Lao People's Democratic Republic,0.613,7.169,Lao People's Democratic Republic,LA,LAO
+97,Lebanon,0.744,6.856,Lebanon,LB,LBN
+98,Liberia,0.48,4.937,Liberia,LR,LBR
+99,Libya,0.724,6.777,Libya,LY,LBY
+100,Saint Lucia,0.759,0.183,Saint Lucia,LC,LCA
+101,Liechtenstein,0.919,0.038,Liechtenstein,LI,LIE
+102,Sri Lanka,0.782,21.324,Sri Lanka,LK,LKA
+103,Lesotho,0.527,2.125,Lesotho,LS,LSO
+104,Lithuania,0.882,2.76,Lithuania,LT,LTU
+105,Luxembourg,0.916,0.616,Luxembourg,LU,LUX
+106,Latvia,0.866,1.907,Latvia,LV,LVA
+107,Morocco,0.686,36.472,Morocco,MA,MAR
+108,Moldova (Republic of),0.75,4.043,"Moldova, Republic of",MD,MDA
+109,Madagascar,0.528,26.969,Madagascar,MG,MDG
+110,Maldives,0.74,0.531,Maldives,MV,MDV
+111,Mexico,0.779,127.576,Mexico,MX,MEX
+112,Marshall Islands,0.704,0.059000000000000004,Marshall Islands,MH,MHL
+113,North Macedonia,0.774,2.083,North Macedonia,MK,MKD
+114,Mali,0.434,19.658,Mali,ML,MLI
+115,Malta,0.895,0.44,Malta,MT,MLT
+116,Myanmar,0.583,54.045,Myanmar,MM,MMR
+117,Montenegro,0.8290000000000001,0.628,Montenegro,ME,MNE
+118,Mongolia,0.737,3.225,Mongolia,MN,MNG
+119,Mozambique,0.456,30.366,Mozambique,MZ,MOZ
+120,Mauritania,0.546,4.526,Mauritania,MR,MRT
+121,Mauritius,0.804,1.27,Mauritius,MU,MUS
+122,Malawi,0.483,18.629,Malawi,MW,MWI
+123,Malaysia,0.81,31.95,Malaysia,MY,MYS
+124,Namibia,0.646,2.495,Namibia,NA,NAM
+125,Niger,0.394,23.311,Niger,NE,NER
+126,Nigeria,0.539,200.964,Nigeria,NG,NGA
+127,Nicaragua,0.66,6.546,Nicaragua,NI,NIC
+128,Netherlands,0.9440000000000001,17.097,Netherlands,NL,NLD
+129,Norway,0.9570000000000001,5.379,Norway,NO,NOR
+130,Nepal,0.602,28.609,Nepal,NP,NPL
+131,New Zealand,0.931,4.783,New Zealand,NZ,NZL
+132,Oman,0.8130000000000001,4.975,Oman,OM,OMN
+133,Pakistan,0.557,216.565,Pakistan,PK,PAK
+134,Panama,0.8150000000000001,4.246,Panama,PA,PAN
+135,Peru,0.777,32.51,Peru,PE,PER
+136,Philippines,0.718,108.117,Philippines,PH,PHL
+137,Palau,0.8260000000000001,0.018000000000000002,Palau,PW,PLW
+138,Papua New Guinea,0.555,8.776,Papua New Guinea,PG,PNG
+139,Poland,0.88,37.888,Poland,PL,POL
+140,Portugal,0.864,10.226,Portugal,PT,PRT
+141,Paraguay,0.728,7.045,Paraguay,PY,PRY
+142,"Palestine, State of",0.708,4.981,"Palestine, State of",PS,PSE
+143,Qatar,0.848,2.832,Qatar,QA,QAT
+144,Romania,0.8280000000000001,19.365,Romania,RO,ROU
+145,Russian Federation,0.8240000000000001,145.872,Russian Federation,RU,RUS
+146,Rwanda,0.543,12.627,Rwanda,RW,RWA
+147,Saudi Arabia,0.854,34.269,Saudi Arabia,SA,SAU
+148,Sudan,0.51,42.813,Sudan,SD,SDN
+149,Senegal,0.512,16.296,Senegal,SN,SEN
+150,Singapore,0.9380000000000001,5.804,Singapore,SG,SGP
+151,Solomon Islands,0.5670000000000001,0.67,Solomon Islands,SB,SLB
+152,Sierra Leone,0.452,7.813,Sierra Leone,SL,SLE
+153,El Salvador,0.673,6.454,El Salvador,SV,SLV
+154,Serbia,0.806,8.772,Serbia,RS,SRB
+155,South Sudan,0.433,11.062,South Sudan,SS,SSD
+156,Sao Tome and Principe,0.625,0.215,Sao Tome and Principe,ST,STP
+157,Suriname,0.738,0.581,Suriname,SR,SUR
+158,Slovakia,0.86,5.457,Slovakia,SK,SVK
+159,Slovenia,0.917,2.079,Slovenia,SI,SVN
+160,Sweden,0.9450000000000001,10.036,Sweden,SE,SWE
+161,Eswatini (Kingdom of),0.611,1.148,Eswatini,SZ,SWZ
+162,Seychelles,0.796,0.098,Seychelles,SC,SYC
+163,Syrian Arab Republic,0.5670000000000001,17.07,Syrian Arab Republic,SY,SYR
+164,Chad,0.398,15.947,Chad,TD,TCD
+165,Togo,0.515,8.082,Togo,TG,TGO
+166,Thailand,0.777,69.626,Thailand,TH,THA
+167,Tajikistan,0.668,9.321,Tajikistan,TJ,TJK
+168,Turkmenistan,0.715,5.942,Turkmenistan,TM,TKM
+169,Timor-Leste,0.606,1.293,Timor-Leste,TL,TLS
+170,Tonga,0.725,0.10400000000000001,Tonga,TO,TON
+171,Trinidad and Tobago,0.796,1.395,Trinidad and Tobago,TT,TTO
+172,Tunisia,0.74,11.695,Tunisia,TN,TUN
+173,Turkey,0.8200000000000001,83.43,Turkey,TR,TUR
+174,Tanzania (United Republic of),0.529,58.005,"Tanzania, United Republic of",TZ,TZA
+175,Uganda,0.544,44.27,Uganda,UG,UGA
+176,Ukraine,0.779,43.994,Ukraine,UA,UKR
+177,Uruguay,0.8170000000000001,3.462,Uruguay,UY,URY
+178,United States,0.926,329.065,United States of America,US,USA
+179,Uzbekistan,0.72,32.982,Uzbekistan,UZ,UZB
+180,Saint Vincent and the Grenadines,0.738,0.111,Saint Vincent and the Grenadines,VC,VCT
+181,Venezuela (Bolivarian Republic of),0.711,28.516,Venezuela (Bolivarian Republic of),VE,VEN
+182,Viet Nam,0.704,96.462,Viet Nam,VN,VNM
+183,Vanuatu,0.609,0.30000000000000004,Vanuatu,VU,VUT
+184,Samoa,0.715,0.197,Samoa,WS,WSM
+185,Yemen,0.47000000000000003,29.162,Yemen,YE,YEM
+186,South Africa,0.709,58.558,South Africa,ZA,ZAF
+187,Zambia,0.584,17.861,Zambia,ZM,ZMB
+188,Zimbabwe,0.5710000000000001,14.645,Zimbabwe,ZW,ZWE
