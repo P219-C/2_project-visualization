@@ -1,5 +1,5 @@
 
-  var FEED = 'http://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_month.geojson';
+  var FEED = 'https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_month.geojson';
   var NOW = new Date();
 
   // create map
