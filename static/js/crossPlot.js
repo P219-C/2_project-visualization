@@ -14,24 +14,40 @@ d3.json(url).then(data => {
     });
     
     var top_25Mag = sortedMag.slice(0,25);
+    // console.log(top_25Mag)
+    
+   Object.values(top_25Mag).forEach(row => {
+        console.log(row.properties.place)
+    });
+    // console.log(circle)
 
     // Location Vs Magnitude ScatterPlot
     function getRadius(magnitude) {
         if (magnitude === 0) {
           return 1;
         }
-        return magnitude * 4;
+        return magnitude * 6;
       }
     
+    // var location= Object.values(top_25Mag)
+    // location.forEach(row => {
+    //     bubble_trace.append().text(`Place: ${row.properties.place}`)
+    // });
+
     var bubble_trace = {
         x:top_25Mag.map(row => row.geometry.coordinates[1]),
         y:top_25Mag.map(row => row.geometry.coordinates[0]),
         mode: "markers",
-        // text: `Place: ${top_25Mag.map(row => row.properties.place)}`,
+        text: location,
         marker: {
             size: top_25Mag.map(row => getRadius(row.properties.mag))
         }
     };
+
+    // var location= Object.values(top_25Mag)
+    // location.forEach(row => {
+    //     bubble_trace.append().text(`Place: ${row.properties.place}`)
+    // });
 
     var bubble_data = [bubble_trace];
 
@@ -64,7 +80,7 @@ d3.json(url).then(data => {
                 if (magnitude === 0) {
                   return 1;
                 }
-                return magnitude * 4;
+                return magnitude * 6;
               }
             
             var bubble_trace = {
