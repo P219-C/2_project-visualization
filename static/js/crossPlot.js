@@ -3,10 +3,10 @@
 // Signicance (Value is determing by a number of factors eg mag, max MMI, reports and estimated impact) vs mag
 
 
-var url = "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_month.geojson"
+// var url = "http://127.0.0.1:5000/API/earthquakes"
 
 // Fetching the data for the scatterplot
-d3.json(url).then(data => {
+d3.json("/API/earthquakes").then(data => {
 
     // Initial scatter plot: Magnitude Vs Location
     var sortedMag= data.features.sort((a,b) => {
@@ -29,11 +29,6 @@ d3.json(url).then(data => {
         return magnitude * 6;
       }
     
-    // var location= Object.values(top_25Mag)
-    // location.forEach(row => {
-    //     bubble_trace.append().text(`Place: ${row.properties.place}`)
-    // });
-
     var bubble_trace = {
         x:top_25Mag.map(row => row.geometry.coordinates[1]),
         y:top_25Mag.map(row => row.geometry.coordinates[0]),
@@ -43,11 +38,6 @@ d3.json(url).then(data => {
             size: top_25Mag.map(row => getRadius(row.properties.mag))
         }
     };
-
-    // var location= Object.values(top_25Mag)
-    // location.forEach(row => {
-    //     bubble_trace.append().text(`Place: ${row.properties.place}`)
-    // });
 
     var bubble_data = [bubble_trace];
 

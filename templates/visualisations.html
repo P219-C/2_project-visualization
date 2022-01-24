@@ -37,9 +37,17 @@
 </div>
   <br>
   
-  <div class="header" id="myHeader">
+  <div class="header scatter" id="myHeader">
     <h2>Scatter plot</h2>
+    <div class='scatter'></div>
   </div>
+  <!-- <div id="scatter"></div> -->
+  <select id="selectOption">
+    <option value='location'>Location</option>
+    <option value='depth'>Depth</option>
+    <option value='sig'>Significance</option>
+  </select>
+  <div id="scatter"></div>
   <br>
 
   <div class='violin'></div>
@@ -67,13 +75,6 @@
   <div class="header" id="myHeader">
     <h2>Plot 5</h2>
   </div>
-
-  <div id="scatter"></div>
-  <select id="selectOption">
-    <option value='location'>Location</option>
-    <option value='depth'>Depth</option>
-    <option value='sig'>Significance</option>
-  </select>
 
   <!-- API key -->
   <script type="text/javascript" src="../static/js/config.js"></script>
