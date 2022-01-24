@@ -9,10 +9,10 @@
 </head>
 <body>
   <div class="topnav">
-      <a class="active" href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="data.html">Data</a>
-      <a href="visualisations.html">Visualisations</a>
+      <a class="active" href="/">Home</a>
+      <a href="/about">About</a>
+      <a href="/API">Data</a>
+      <a href="/visualisations">Visualisations</a>
     </div>
 
     <div class="top-container">
@@ -23,6 +23,27 @@
       <h2>My Header</h2>
     </div>
 
+    <a href="/API/countries"><strong>/API/countries</strong></a>
+    <p>Description: Json file with information of the countries:</p>
+    <p><ul>
+        <li>Country Code (to link to the earthquake table)</li>
+        <li>Country Name</li>
+        <li>Total Population (millions)</li>
+        <li>HDI</li>
+    </ul></p>
+    <a href="/API/earthquakes"><strong>/API/earthquakes</strong></a>
+    <p>Description: Json file with information of the earthquakes:</p>
+    <p><ul>
+        <li>USGS Earthquake ID</li>
+        <li>Longitude</li>
+        <li>Latitude</li>
+        <li>Depth</li>
+        <li>Timestamp</li>
+        <li>Magnitude</li>
+        <li>Country Code (to link to the country json file)</li>
+    </p></ul>
+    <a href="/API/countries_earthquakes"><strong>/API/countries_earthquakes</strong></a>
+    <p>Description: An INNER JOIN of the countries and earthquakes table through the country code (earthquakes.country_id=countries.CountryCode)</p>
 
 
 
