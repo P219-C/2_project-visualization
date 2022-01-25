@@ -24,7 +24,13 @@ The GeoJSON files and csv files extracted from the data sources were cleaned and
 
 created a RESTFUL API through a Python Flask-powered app using JavaScript, CSS, HTML & Bootstrap
 
-### Flask Structure 
+### Flask app
+####            app.py
+
+![pic1](static\images\flask-pic-1.png)
+![pic1](static\images\flask-pic-2.png)
+![pic1](static\images\flask-pic-3.png)
+
 
 ## Charts
 
@@ -35,7 +41,7 @@ Heat map - using Leaflet
 
 #### Click on the link below to access the project site
 
-
+[project site] ()
 
 
 
