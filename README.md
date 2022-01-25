@@ -18,24 +18,33 @@ The earthquake data was imported, and each earthquakes position, significance an
 ## Data Loading 
 
 The GeoJSON files and csv files extracted from the data sources were cleaned and uploaded to SQLite database
-
+![pic4](/images/creating_database.png)
 
 ## Analysis and Visualisation
 
 created a RESTFUL API through a Python Flask-powered app using JavaScript, CSS, HTML & Bootstrap
 
 ### Flask app
-####            app.py
 
-* ![pic1](/images/flask-pic-1.png)
-* ![pic2](/images/flask-pic-2.png)
-* ![pic3](/images/flask-pic-3.png)
+Diagram of the Flask application
+
+![flask_app](/images/flask_application.png)
+
+#### **app.py**
+
+![pic1](/images/flask-pic-1.png)
+![pic2](/images/flask-pic-2.png)
+![pic3](/images/flask-pic-3.png)
 
 
 ## Charts
 
 Bar Chart, Violin Chart and Scatter plots - using Plotly and D3
 Heat map - using Leaflet
+
+The outputs generated in this project:
+
+![outputs](/images/api_charts.png)
 
 ## Deployment to Huroku
 
