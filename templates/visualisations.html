@@ -31,22 +31,39 @@
     <h2>Bar Plot</h2></div>
     <div class="container-plots">
       <div class="text-plots">
-        <p>Bar plot </p>
+        <p>This bar plot shows the number of Earthquakes in each Country </p>
       </div>
-      <div class="Bar"></div>
-    <h2>Bar Plot</h2>
-  </div>
-  <div class="container-plots">
-    <div class="text-plots">
-      <p>Bar plot text</p>
-    </div>
-    <div class="Bar"></div>
-  </div>
+  <div id="barplot" style =" height:600px"></div>
+</div>
+</div>
   <br>
   
 
 
-  
+  <div class="header" id="myHeader">
+    <h2>Scatter plot</h2>
+  </div>
+  <div class="container">
+  <div class=col-md-12>
+    <div id="scatter">
+    <select id="selectOption">
+      <option value='location'>Location</option>
+      <option value='depth'>Depth</option>
+      <option value='sig'>Significance</option>
+    </select>
+    <hr>
+    <div class="result">
+    <p >The plots utilises Plotly to visualise the earthquakes with the highest 25 magnitudes from the geojson data based on their corresponding independent variable.
+       This visualisation makes it easier to see if there are any correlations between Magnitude of an earthquake and other factors based on the sample used.
+    </p>
+  </div>
+  </div>
+</div>
+</div>
+ 
+  <br>
+
+
 
   <div class="header" id="myHeader">
     <h2>Heat Map</h2>
@@ -80,13 +97,6 @@
     <h2>  Scatter plot</h2>
   </div>
 
-  <div id="scatter"></div>
-  <select id="selectOption">
-    <option value='location'>Location</option>
-    <option value='depth'>Depth</option>
-    <option value='sig'>Significance</option>
-  </select>
-
   <!-- API key -->
   <script type="text/javascript" src="../static/js/config.js"></script>
   <!-- Leaflet heatmap plugin-->
@@ -103,6 +113,7 @@
 
 
 <script type="text/javascript" src="../static/js/heatmap.js"></script>
+<script type="text/javascript" src="../static/js/barplot.js"></script>
 <script type="text/javascript" src="../static/js/violin.js"></script>
 
 

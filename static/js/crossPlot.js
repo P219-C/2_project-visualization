@@ -14,12 +14,6 @@ d3.json(url).then(data => {
     });
     
     var top_25Mag = sortedMag.slice(0,25);
-    // console.log(top_25Mag)
-    
-   Object.values(top_25Mag).forEach(row => {
-        console.log(row.properties.place)
-    });
-    // console.log(circle)
 
     // Location Vs Magnitude ScatterPlot
     function getRadius(magnitude) {
@@ -29,34 +23,24 @@ d3.json(url).then(data => {
         return magnitude * 6;
       }
     
-    // var location= Object.values(top_25Mag)
-    // location.forEach(row => {
-    //     bubble_trace.append().text(`Place: ${row.properties.place}`)
-    // });
-
     var bubble_trace = {
-        x:top_25Mag.map(row => row.geometry.coordinates[1]),
-        y:top_25Mag.map(row => row.geometry.coordinates[0]),
+        x:top_25Mag.map(row => row.geometry.coordinates[0]),
+        y:top_25Mag.map(row => row.geometry.coordinates[1]),
         mode: "markers",
-        text: location,
+        // text: location,
         marker: {
             size: top_25Mag.map(row => getRadius(row.properties.mag))
         }
     };
 
-    // var location= Object.values(top_25Mag)
-    // location.forEach(row => {
-    //     bubble_trace.append().text(`Place: ${row.properties.place}`)
-    // });
-
     var bubble_data = [bubble_trace];
 
     var bubble_layout = {
         title: "Magnitude Vs Location",
-        yaxis: {title: "Longitude"},
-        xaxis: {title: "Latitude"},
+        xaxis: {title: "Longitude"},
+        yaxis: {title: "Latitude"},
         height: 500,
-        width: 700
+        width: 1000
         };
 
         Plotly.newPlot("scatter",bubble_data,bubble_layout);
@@ -84,8 +68,8 @@ d3.json(url).then(data => {
               }
             
             var bubble_trace = {
-                x:top_25Mag.map(row => row.geometry.coordinates[1]),
-                y:top_25Mag.map(row => row.geometry.coordinates[0]),
+                x:top_25Mag.map(row => row.geometry.coordinates[0]),
+                y:top_25Mag.map(row => row.geometry.coordinates[1]),
                 mode: "markers",
                 marker: {
                     size: top_25Mag.map(row => getRadius(row.properties.mag))     
@@ -96,10 +80,10 @@ d3.json(url).then(data => {
 
             var bubble_layout = {
                 title: "Magnitude Vs Location",
-                yaxis: {title: "Longitude"},
-                xaxis: {title: "Latitude"},
+                xaxis: {title: "Longitude"},
+                yaxis: {title: "Latitude"},
                 height: 500,
-                width: 700
+                width: 1000
                 };
         
         } else if (value == "depth"){
@@ -125,7 +109,7 @@ d3.json(url).then(data => {
                 xaxis: {title: "Depth of Earthquake"},
                 yaxis: {title: "Magnitude of Earthquake"},
                 height: 500,
-                width: 700
+                width: 1000
                 };
 
         } else if (value == "sig"){
@@ -151,7 +135,7 @@ d3.json(url).then(data => {
                 xaxis: {title: "Significance of Earthquake"},
                 yaxis: {title: "Magnitude of Earthquake"},
                 height: 500,
-                width: 700
+                width: 1000
                 };
             }
     
