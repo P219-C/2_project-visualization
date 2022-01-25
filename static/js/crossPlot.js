@@ -3,6 +3,7 @@
 // Signicance (Value is determing by a number of factors eg mag, max MMI, reports and estimated impact) vs mag
 
 
+
 // Fetching the data for the scatterplot
 d3.json("API/earthquakes").then(data => {
     console.log(data)

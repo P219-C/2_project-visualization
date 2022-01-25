@@ -52,7 +52,7 @@ def earthquakes():
 
     # Connecting to the db
     conn = engine.connect()
-    earthquakes_sql = pd.read_sql("SELECT * FROM earthquakes", conn)
+    earthquakes_sql = pd.read_sql("SELECT * FROM earthquakes ", conn)
 
     earthquakes_json = earthquakes_sql.to_json(orient="records")
 
@@ -65,7 +65,7 @@ def countries_earthquakes():
     engine = create_engine(db_string)
 
     conn = engine.connect()
-    countries_earthquakes_sql = pd.read_sql("SELECT * FROM countries INNER JOIN earthquakes ON earthquakes.country_id=countries.CountryCode", conn)
+    countries_earthquakes_sql = pd.read_sql("SELECT * FROM countries INNER JOIN earthquakes ON earthquakes.country_id=countries.CountryCode where CountryName != 'United States'", conn)
 
     countries_earthquakes_json = countries_earthquakes_sql.to_json(orient="records")
 

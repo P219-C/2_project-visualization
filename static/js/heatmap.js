@@ -4,8 +4,8 @@
 
   // create map
   var map = L.map(document.querySelector('.map'));
-  // center in colorado
-  map.setView([39.5, -106], 2);
+  // center in Perth
+  map.setView([31.9523, 115.8613], 2);
   // add basemap
   L.tileLayer('https://services.arcgisonline.com/arcgis/rest/services/World_Topo_Map/MapServer/tile/{z}/{y}/{x}', {
       
