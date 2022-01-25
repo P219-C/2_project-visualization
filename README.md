@@ -12,8 +12,8 @@ The earthquake data was imported, and each earthquakes position, significance an
 
 ## Data Sources
 
-* http://hdr.undp.org/en/content/human-development-report-office-statistical-data-api
-* https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_month.geojson
+* [ HDRO ](http://hdr.undp.org/en/content/human-development-report-office-statistical-data-api)
+* [USGS](https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_month.geojson)
 
 ## Data Loading 
 
@@ -30,6 +30,10 @@ created a RESTFUL API through a Python Flask-powered app using JavaScript, CSS, 
 
 Bar Chart, Violin Chart and Scatter plots - using Plotly and D3
 Heat map - using Leaflet
+
+## Deployment to Huroku
+
+#### Click on the link below to access the project site
 
 
 
