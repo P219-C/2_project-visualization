@@ -1,7 +1,7 @@
 # Project #2: Visualize Me, Captain!
 # Earthquake data analysis
 
-![Earthquakes](\static\images\pacific-ring-of-fire.jpg)
+![Earthquakes](.\static\images\pacific-ring-of-fire.jpg)
 
 ## Purpose and Motivation
 The purpose of this project is to gather earthquake GeoJSON data from the USGS and HDRO API, create and explore interactive maps of earthquakes around the world that tracks not only the earthquakes but the magnitude as well. The map also includes pop-up information for each incident.
@@ -28,8 +28,8 @@ created a RESTFUL API through a Python Flask-powered app using JavaScript, CSS, 
 ####            app.py
 
 ![pic1](static\images\flask-pic-1.png)
-![pic1](static\images\flask-pic-2.png)
-![pic1](static\images\flask-pic-3.png)
+![pic2](static\images\flask-pic-2.png)
+![pic3](static\images\flask-pic-3.png)
 
 
 ## Charts
