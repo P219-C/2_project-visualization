@@ -3,17 +3,18 @@
 // Signicance (Value is determing by a number of factors eg mag, max MMI, reports and estimated impact) vs mag
 
 
-var url = "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_month.geojson"
 
 // Fetching the data for the scatterplot
-d3.json(url).then(data => {
+d3.json("API/earthquakes").then(data => {
+    console.log(data)
 
     // Initial scatter plot: Magnitude Vs Location
-    var sortedMag= data.features.sort((a,b) => {
-        return b.properties.mag - a.properties.mag;
+    var sortedMag= data.sort((a,b) => {
+        return b.Magnitude - a.Magnitude;
     });
     
     var top_25Mag = sortedMag.slice(0,25);
+    console.log(top_25Mag)
 
     // Location Vs Magnitude ScatterPlot
     function getRadius(magnitude) {
@@ -24,12 +25,11 @@ d3.json(url).then(data => {
       }
     
     var bubble_trace = {
-        x:top_25Mag.map(row => row.geometry.coordinates[0]),
-        y:top_25Mag.map(row => row.geometry.coordinates[1]),
+        x:top_25Mag.map(row => row.Longitude),
+        y:top_25Mag.map(row => row.Latitude),
         mode: "markers",
-        // text: location,
         marker: {
-            size: top_25Mag.map(row => getRadius(row.properties.mag))
+            size: top_25Mag.map(row => getRadius(row.Magnitude))
         }
     };
 
@@ -53,8 +53,8 @@ d3.json(url).then(data => {
     
         if (value == 'location'){
             // Sorted by top 25 Magitudes
-            var sortedMag= data.features.sort((a,b) => {
-            return b.properties.mag - a.properties.mag;
+            var sortedMag= data.sort((a,b) => {
+            return b.Magnitude  - a.Magnitude ;
         });
         
             var top_25Mag = sortedMag.slice(0,25);
@@ -68,11 +68,11 @@ d3.json(url).then(data => {
               }
             
             var bubble_trace = {
-                x:top_25Mag.map(row => row.geometry.coordinates[0]),
-                y:top_25Mag.map(row => row.geometry.coordinates[1]),
+                x:top_25Mag.map(row => row.Longitude),
+                y:top_25Mag.map(row => row.Latitude),
                 mode: "markers",
                 marker: {
-                    size: top_25Mag.map(row => getRadius(row.properties.mag))     
+                    size: top_25Mag.map(row => getRadius(row.Magnitude))     
                 }
             };
 
@@ -89,15 +89,15 @@ d3.json(url).then(data => {
         } else if (value == "depth"){
             // Sorted by top 25 Depth
             var sortedDept= data.features.sort((a,b) => {
-            return b.geometry.coordinates[2] - a.geometry.coordinates[2];
+            return b.Depth - a.Depth;
         });
         
             var top_25Dept = sortedDept.slice(0,25);
 
             // Bubble chart for Magnitude Vs Depth
             var bubble_trace = {
-                x:top_25Dept.map(row => row.geometry.coordinates[2]),
-                y:top_25Dept.map(row => row.properties.mag),
+                x:top_25Dept.map(row => row.Depth),
+                y:top_25Dept.map(row => row.Magnitude),
                 type: 'scatter',
                 mode:'markers'
             };
@@ -111,36 +111,38 @@ d3.json(url).then(data => {
                 height: 500,
                 width: 1000
                 };
-
-        } else if (value == "sig"){
-            // Sorted by 25 significant earthquakes
-            var sortedSig= data.features.sort((a,b) => {
-            return b.properties.sig - a.properties.sig;
-        });
-            
-            var top_25Sig = sortedSig.slice(0,25);
-    
-            // Magnitude Vs Earthquake Significance
-            var bubble_trace = {
-                x:top_25Sig.map(row => row.properties.mag),
-                y:top_25Sig.map(row => row.properties.sig),
-                mode: "markers",
-                type: 'scatter'
-            };
+            } 
         
-            var bubble_data = [bubble_trace];
-        
-            var bubble_layout = {
-                title: "Magnitude Vs Significance",  
-                xaxis: {title: "Significance of Earthquake"},
-                yaxis: {title: "Magnitude of Earthquake"},
-                height: 500,
-                width: 1000
-                };
-            }
     
         Plotly.newPlot("scatter",bubble_data,bubble_layout);
 
     });
 })
 
+
+
+  // } else if (value == "sig"){
+        //     // Sorted by 25 significant earthquakes
+        //     var sortedSig= data.features.sort((a,b) => {
+        //     return b.properties.sig - a.properties.sig;
+        // });
+            
+        //     var top_25Sig = sortedSig.slice(0,25);
+    
+        //     // Magnitude Vs Earthquake Significance
+        //     var bubble_trace = {
+        //         x:top_25Sig.map(row => row.properties.mag),
+        //         y:top_25Sig.map(row => row.properties.sig),
+        //         mode: "markers",
+        //         type: 'scatter'
+        //     };
+        
+        //     var bubble_data = [bubble_trace];
+        
+        //     var bubble_layout = {
+        //         title: "Magnitude Vs Significance",  
+        //         xaxis: {title: "Significance of Earthquake"},
+        //         yaxis: {title: "Magnitude of Earthquake"},
+        //         height: 500,
+        //         width: 1000
+        //         };
