@@ -3,10 +3,10 @@
 // Signicance (Value is determing by a number of factors eg mag, max MMI, reports and estimated impact) vs mag
 
 
-// var url = "http://127.0.0.1:5000"
+var url = "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_month.geojson"
 
 // Fetching the data for the scatterplot
-d3.json("/API/earthquakes").then(data => {
+d3.json(url).then(data => {
 
     // Initial scatter plot: Magnitude Vs Location
     var sortedMag= data.features.sort((a,b) => {
@@ -27,7 +27,7 @@ d3.json("/API/earthquakes").then(data => {
         x:top_25Mag.map(row => row.geometry.coordinates[0]),
         y:top_25Mag.map(row => row.geometry.coordinates[1]),
         mode: "markers",
-        text: location,
+        // text: location,
         marker: {
             size: top_25Mag.map(row => getRadius(row.properties.mag))
         }
