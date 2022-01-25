@@ -20,7 +20,7 @@ function getRandomInt(max) {
 function violinChart(violinObject, selectedCountry){
 
     const uniqueCountries = [...new Set(violinObject.map(item => item.CountryCode))];
-    console.log(uniqueCountries)
+    // console.log(uniqueCountries)
 
     var randomCountries = [];
     randomCountries.push(selectedCountry);
@@ -42,7 +42,7 @@ function violinChart(violinObject, selectedCountry){
         return (entry.CountryCode === randomCountries[0] || entry.CountryCode === randomCountries[1] || entry.CountryCode === randomCountries[2] || entry.CountryCode === randomCountries[3] || entry.CountryCode === randomCountries[4]);
     });
     
-    console.log(filteredCountries)
+    // console.log(filteredCountries)
 
     
 
